@@ -18,7 +18,7 @@ export default function Header() {
           borderRadius: "50%",
         }}
       />
-      <div className=" pl-4 font-bold text-xl">hii</div>
+      <h1 className=" pl-4 ">hii</h1>
     </div>
   );
 }

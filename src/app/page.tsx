@@ -4,12 +4,10 @@ import CustomButton from "@/components/ui/button";
 export default function Home() {
   return (
     <div className=" relative top-28">
-      <h1 className="relative text-center text-xl">Home</h1>
+      <h1 className="relative text-center">Home</h1>
 
-      <div className="relative mt-10 bg-amber-50 pt-4 pb-5 pr-8 pl-8 ml-8 mr-8 rounded-2xl">
-        <h2 className="relatived text-base text-emerald-500 font-bold">
-          Profile
-        </h2>
+      <div className="relative mt-10 bg-white pt-4 pb-5 pr-8 pl-8 ml-8 mr-8 rounded-2xl">
+        <h2 className="relatived">Profile</h2>
         <p className="text-gray-800 text-sm mt-1">
           Web Engineer. <br />
           Ehime / Japan. | Next Tokyo. <br />
@@ -18,19 +16,17 @@ export default function Home() {
         </p>
       </div>
 
-      <div className="relative mt-16 bg-amber-50 pt-4 pb-5 pr-8 pl-8 ml-8 mr-8 rounded-2xl">
-        <h2 className="relatived text-base text-emerald-500 font-bold">
-          Skills
-        </h2>
+      <div className="relative mt-16 bg-white pt-4 pb-5 pr-8 pl-8 ml-8 mr-8 rounded-2xl">
+        <h2 className="relatived">Skills</h2>
         <div className="grid grid-cols-2 gap-4 mt-1">
-          <p className="text-gray-800 text-sm">
+          <p>
             HTML5 <br />
             CSS3 <br />
             JavaScript <br />
             TypeScript <br />
             Python
           </p>
-          <p className="text-gray-800 text-sm">
+          <p>
             React <br />
             Next.js <br />
             FastAPI <br />
@@ -41,11 +37,9 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="relative mt-10 bg-amber-50 pt-4 pb-6 pr-8 pl-8 ml-8 mr-8 rounded-2xl">
-        <h2 className="relatived text-base text-emerald-500 font-bold">Blog</h2>
-        <p className="text-gray-800 text-sm mt-1">
-          Zenn / 14 Article / 40 Likes / 3 Flowers
-        </p>
+      <div className="relative mt-10 bg-white pt-4 pb-6 pr-8 pl-8 ml-8 mr-8 rounded-2xl">
+        <h2 className="relatived">Blog</h2>
+        <p className="mt-1">Zenn / 14 Article / 40 Likes / 3 Flowers</p>
         <a
           href="https://zenn.dev/aputech"
           target="_blank"
@@ -53,9 +47,7 @@ export default function Home() {
         >
           <CustomButton buttontext="Visit Zenn" />
         </a>
-        <p className="text-gray-800 text-sm mt-1">
-          note / 3 Article / 21 Likes 6500 Views
-        </p>
+        <p className="mt-1">note / 3 Article / 21 Likes 6500 Views</p>
         <a
           href="https://note.com/hii_hgmt"
           target="_blank"
@@ -65,10 +57,8 @@ export default function Home() {
         </a>
       </div>
 
-      <div className="relative mt-10 bg-amber-50 pt-4 pb-6 pr-8 pl-8 ml-8 mr-8 rounded-2xl">
-        <h2 className="relatived text-base text-emerald-500 font-bold">
-          Portfolio
-        </h2>
+      <div className="relative mt-10 bg-white pt-4 pb-6 pr-8 pl-8 ml-8 mr-8 rounded-2xl">
+        <h2 className="relatived">Portfolio</h2>
         <div className="mt-2">
           <NextLink href="/portfolio">
             <CustomButton buttontext="My Portfolios" />
@@ -76,32 +66,29 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="relative mt-10 bg-amber-50 pt-4 pb-6 pr-8 pl-8 ml-8 mr-8 rounded-2xl">
-        <h2 className="relatived text-base text-emerald-500 font-bold">SNS</h2>
+      <div className="relative mt-10 bg-white pt-4 pb-6 pr-8 pl-8 ml-8 mr-8 rounded-2xl">
+        <h2 className="relatived">SNS</h2>
         <div className="grid grid-cols-2 gap-4 mt-1">
-          <p className="text-gray-800 text-sm">
+          <p>
             Twitter <br />
             GitHub
           </p>
-          <p className="text-gray-800 text-sm">
+          <div>
             <CustomButton buttontext="My Portfolios" />
-            <br />
             <CustomButton buttontext="My Portfolios" />
-          </p>
+          </div>
         </div>
       </div>
 
-      <div className="relative mt-10 bg-amber-50 pt-4 pb-6 pr-8 pl-8 ml-8 mr-8 rounded-2xl">
-        <h2 className="relatived text-base text-emerald-500 font-bold">
-          Contact
-        </h2>
+      <div className="relative mt-10 bg-white pt-4 pb-6 pr-8 pl-8 ml-8 mr-8 rounded-2xl">
+        <h2 className="relatived">Contact</h2>
         <a
           href="mailto:CA01971020@st.kawahara.ac.jp"
           className="text-gray-800 text-sm"
         >
           E-Mail
         </a>
-        <p className="text-gray-800 text-sm">Twitter DM</p>
+        <p>Twitter DM</p>
       </div>
     </div>
   );
