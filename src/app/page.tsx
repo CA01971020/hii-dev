@@ -7,9 +7,9 @@ export default function Home() {
     <div className=" relative top-32 mb-20">
       <h1 className="relative text-center">Home</h1>
 
-      <div className="duration-200 hover:scale-103 relative mt-10 bg-white pt-4 pb-5 pr-8 pl-8 ml-8 mr-8 rounded-2xl">
+      <div className="duration-200 hover:scale-103 relative mt-16 bg-white pt-4 pb-5 pr-8 pl-8 ml-8 mr-8 rounded-2xl">
         <h2 className="relatived">Profile</h2>
-        <p className="text-gray-800 text-sm mt-4">
+        <p className="mt-4">
           Web Engineer. <br />
           Ehime / Japan. | Next Tokyo. <br />
           Kawahara Computer Business College. <br />
