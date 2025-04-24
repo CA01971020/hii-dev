@@ -74,8 +74,22 @@ export default function Home() {
             <p>GitHub</p>
           </div>
           <div className=" space-y-4">
-            <CustomButton buttontext="Follow us on Twitter" />
-            <CustomButton buttontext="View on GitHub" />
+            <a
+              href="https://x.com/hiitech2024"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block"
+            >
+              <CustomButton buttontext="Follow us on Twitter" />
+            </a>
+            <a
+              href="https://github.com/CA01971020"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block"
+            >
+              <CustomButton buttontext="View on GitHub" />
+            </a>
           </div>
         </div>
       </div>
@@ -88,7 +102,7 @@ export default function Home() {
         </p>
         <p className="mt-1">Twitter DM</p>
         <a
-          href="https://note.com/hii_hgmt"
+          href="https://x.com/hiitech2024"
           target="_blank"
           rel="noopener noreferrer"
         >
