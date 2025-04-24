@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/header";
-import Footer from "@/components/footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -15,7 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "hii-dev",
+  title: "hii dev",
   description:
     "hii-dev は、情報系専門学生である私のスキルとプロジェクトを紹介するポートフォリオサイトです。Next.jsをベースに開発を行い、自身のプロフィール、制作実績、技術スタック、活動などを整理し、閲覧者にわかりやすく伝える構成にしています。",
 };
