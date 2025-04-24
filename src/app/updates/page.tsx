@@ -1,7 +1,23 @@
+import { data } from "@/data/updatesData";
+import { UpdatesCard } from "@/components/ui/updatesCard";
+
 export default function UpdateHistory() {
   return (
     <div className=" relative top-32">
       <h1 className="relative text-center">Update History</h1>
+
+      <div>
+        {data.map((data) => (
+          <UpdatesCard
+            key={data.id}
+            title={data.title}
+            date={data.date}
+            description={data.description}
+            techStack={data.techStack}
+            githubLink={data.githubLink}
+          />
+        ))}
+      </div>
     </div>
   );
 }
