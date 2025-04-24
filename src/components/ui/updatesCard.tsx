@@ -20,9 +20,9 @@ export const UpdatesCard: React.FC<UpdatesCardProps> = ({
   return (
     <div className="duration-200 hover:scale-103 relative mt-16 bg-white pt-4 pb-5 pr-8 pl-8 ml-8 mr-8 rounded-2xl shadow-lg">
       <div className="border border-b-2 border-b-black">
-        <h3 className="text-black text-2xl">{title}</h3>
+        <h3 className="text-black text-xl">{title}</h3>
       </div>
-      <h4 className="text-black text-xl mt-1">{date}</h4>
+      <h4 className="text-black text-lg mt-1">{date}</h4>
       <p className="mt-4 whitespace-pre-line">{description}</p>
 
       {techStack && (
