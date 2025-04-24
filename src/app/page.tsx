@@ -6,7 +6,7 @@ export default function Home() {
     <div className=" relative top-32">
       <h1 className="relative text-center">Home</h1>
 
-      <div className="relative mt-10 bg-white pt-4 pb-5 pr-8 pl-8 ml-8 mr-8 rounded-2xl">
+      <div className="duration-200 hover:scale-103 relative mt-10 bg-white pt-4 pb-5 pr-8 pl-8 ml-8 mr-8 rounded-2xl">
         <h2 className="relatived">Profile</h2>
         <p className="text-gray-800 text-sm mt-4">
           Web Engineer. <br />
@@ -16,7 +16,7 @@ export default function Home() {
         </p>
       </div>
 
-      <div className="relative mt-16 bg-white pt-4 pb-5 pr-8 pl-8 ml-8 mr-8 rounded-2xl">
+      <div className="duration-200 hover:scale-103 relative mt-16 bg-white pt-4 pb-5 pr-8 pl-8 ml-8 mr-8 rounded-2xl">
         <h2 className="relatived">Skills</h2>
         <div className="grid grid-cols-2 gap-4 mt-4">
           <p>
@@ -37,9 +37,9 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="relative mt-16 bg-white pt-4 pb-6 pr-8 pl-8 ml-8 mr-8 rounded-2xl">
+      <div className=" duration-200 hover:scale-103 relative mt-16 bg-white pt-4 pb-6 pr-8 pl-8 ml-8 mr-8 rounded-2xl">
         <h2 className="relatived">Blog</h2>
-        <p className="mt-4">Zenn / 14 Article / 40 Likes / 3 Flowers</p>
+        <p className="mt-4">Zenn / 14 Article / 41 Likes / 4 Flowers</p>
         <a
           href="https://zenn.dev/aputech"
           target="_blank"
@@ -57,7 +57,7 @@ export default function Home() {
         </a>
       </div>
 
-      <div className="relative mt-16 bg-white pt-4 pb-6 pr-8 pl-8 ml-8 mr-8 rounded-2xl">
+      <div className="duration-200 hover:scale-103 relative mt-16 bg-white pt-4 pb-6 pr-8 pl-8 ml-8 mr-8 rounded-2xl">
         <h2 className="relatived">Portfolio</h2>
         <div className="mt-4">
           <NextLink href="/portfolio">
@@ -66,7 +66,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="relative mt-16 bg-white pt-4 pb-6 pr-8 pl-8 ml-8 mr-8 rounded-2xl">
+      <div className="duration-200 hover:scale-103 relative mt-16 bg-white pt-4 pb-6 pr-8 pl-8 ml-8 mr-8 rounded-2xl">
         <h2 className="relatived">SNS</h2>
         <div className="grid grid-cols-2 mt-4">
           <div className="space-y-4">
@@ -94,10 +94,10 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="relative mt-16 bg-white pt-4 pb-6 pr-8 pl-8 ml-8 mr-8 rounded-2xl">
+      <div className="duration-200 hover:scale-103 relative mt-16 bg-white pt-4 pb-6 pr-8 pl-8 ml-8 mr-8 rounded-2xl">
         <h2 className="relatived">Contact</h2>
         <p className="mt-4">E-Mail</p>
-        <p className="break-words bg-gray-200 text-center rounded-xl">
+        <p className="break-words select-text bg-gray-200 text-center rounded-xl">
           CA01971020@st.kawahara.ac.jp
         </p>
         <p className="mt-1">Twitter DM</p>

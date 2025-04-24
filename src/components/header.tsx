@@ -10,7 +10,7 @@ export default function Header() {
         href="https://github.com/CA01971020"
         target="_blank"
         rel="noopener noreferrer"
-        className=" pt-1 pl-4 pb-1"
+        className=" select-none pt-1 pl-4 pb-1 duration-200 hover:scale-110"
       >
         <CirclePhotoCard
           src="/hii-pf-icon.jpg"
@@ -28,7 +28,7 @@ export default function Header() {
           }}
         />
       </a>
-      <h1 className=" relative left-6 ">hii</h1>
+      <h1 className=" relative left-6 select-none">hii</h1>
       <Menu />
     </div>
   );

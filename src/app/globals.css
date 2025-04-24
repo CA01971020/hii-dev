@@ -35,11 +35,11 @@ body {
 }
 
 h1 {
-  @apply text-2xl font-bold;
+  @apply text-2xl font-bold select-none;
 }
 
 h2 {
-  @apply text-xl text-turquoise font-bold;
+  @apply text-xl text-turquoise font-bold select-none;
 }
 
 p {
