@@ -69,10 +69,10 @@ export default function Home() {
       <div className="relative mt-16 bg-white pt-4 pb-6 pr-8 pl-8 ml-8 mr-8 rounded-2xl">
         <h2 className="relatived">SNS</h2>
         <div className="grid grid-cols-2 mt-4">
-          <p className="space-y-4">
-            <div>Twitter</div>
-            <div>GitHub</div>
-          </p>
+          <div className="space-y-4">
+            <p>Twitter</p>
+            <p>GitHub</p>
+          </div>
           <div className=" space-y-4">
             <CustomButton buttontext="Follow us on Twitter" />
             <CustomButton buttontext="View on GitHub" />
