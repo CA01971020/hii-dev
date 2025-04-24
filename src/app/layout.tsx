@@ -34,9 +34,6 @@ export default function RootLayout({
           <Header />
         </div>
         {children}
-        <div className=" relative mt-48 mb-12">
-          <Footer />
-        </div>
       </body>
     </html>
   );

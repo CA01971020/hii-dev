@@ -1,9 +1,10 @@
 import NextLink from "next/link";
 import CustomButton from "@/components/ui/button";
+import Footer from "@/components/footer";
 
 export default function Home() {
   return (
-    <div className=" relative top-32">
+    <div className=" relative top-32 mb-20">
       <h1 className="relative text-center">Home</h1>
 
       <div className="duration-200 hover:scale-103 relative mt-10 bg-white pt-4 pb-5 pr-8 pl-8 ml-8 mr-8 rounded-2xl">
@@ -108,6 +109,9 @@ export default function Home() {
         >
           <CustomButton buttontext="Contact via Twitter DM" />
         </a>
+      </div>
+      <div className="relative mt-20 mb-44">
+        <Footer />
       </div>
     </div>
   );
