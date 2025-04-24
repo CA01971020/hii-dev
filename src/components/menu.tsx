@@ -3,6 +3,8 @@
 import React, { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoMdClose } from "react-icons/io";
+import Link from "next/link";
+import NextLink from "next/link";
 
 export function MenuState() {
   const [show, setShow] = useState(false);
@@ -23,31 +25,66 @@ export default function Menu() {
         <div className=" text-center mt-24">
           <div>
             <div className=" mt-8">
-              <h2 className="duration-300 hover:scale-125">Home</h2>
+              <Link href="/" onClick={() => setShow(false)}>
+                <h2 className="duration-300 hover:scale-125">Home</h2>
+              </Link>
             </div>
             <div className=" mt-8">
-              <h2 className="duration-300 hover:scale-125">Profile</h2>
+              <NextLink href="/portfolio" onClick={() => setShow(false)}>
+                <h2 className="duration-300 hover:scale-125">Portfolio</h2>
+              </NextLink>
             </div>
             <div className=" mt-8">
-              <h2 className="duration-300 hover:scale-125">Skills</h2>
+              <a
+                href="https://zenn.dev/aputech"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <h2 className="duration-300 hover:scale-125">Zenn</h2>
+              </a>
             </div>
             <div className=" mt-8">
-              <h2 className="duration-300 hover:scale-125">Portfolio</h2>
+              <a
+                href="https://note.com/hii_hgmt"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <h2 className="duration-300 hover:scale-125">note</h2>
+              </a>
             </div>
             <div className=" mt-8">
-              <h2 className="duration-300 hover:scale-125">Zenn</h2>
+              <a
+                href="https://x.com/hiitech2024"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block"
+              >
+                <h2 className="duration-300 hover:scale-125">Twitter</h2>
+              </a>
             </div>
             <div className=" mt-8">
-              <h2 className="duration-300 hover:scale-125">note</h2>
+              <a
+                href="https://github.com/CA01971020"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block"
+              >
+                <h2 className="duration-300 hover:scale-125">GitHub</h2>
+              </a>
             </div>
             <div className=" mt-8">
-              <h2 className="duration-300 hover:scale-125">Twitter</h2>
+              <a
+                href="mailto:CA01971020@st.kawahara.ac.jp"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <h2 className="duration-300 hover:scale-125">E-Mail</h2>
+              </a>
             </div>
             <div className=" mt-8">
-              <h2 className="duration-300 hover:scale-125">GitHub</h2>
-            </div>
-            <div className=" mt-8">
-              <h2 className="duration-300 hover:scale-125">Contact</h2>
+              <NextLink href="/updates" onClick={() => setShow(false)}>
+                <h2 className="duration-300 hover:scale-125">Update History</h2>
+              </NextLink>
             </div>
           </div>
           <div className="mt-18">
