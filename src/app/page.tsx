@@ -104,7 +104,7 @@ export default function Home() {
           </p>
           <p className="mt-1">Twitter DM</p>
           <a
-            href="https://x.com/hiitech2024"
+            href="https://x.com/h1idev"
             target="_blank"
             rel="noopener noreferrer"
           >
