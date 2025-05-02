@@ -50,7 +50,7 @@ export default function Home() {
         </a>
         <p className="mt-1">note / 3 Article / 21 Likes 6500 Views</p>
         <a
-          href="https://note.com/hii_hgmt"
+          href="https://note.com/h1idev"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -76,7 +76,7 @@ export default function Home() {
           </div>
           <div className=" space-y-4">
             <a
-              href="https://x.com/hiitech2024"
+              href="https://x.com/h1idev"
               target="_blank"
               rel="noopener noreferrer"
               className="block"
