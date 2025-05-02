@@ -45,7 +45,7 @@ export default function Menu() {
             </div>
             <div className=" mt-8">
               <a
-                href="https://note.com/hii_dev"
+                href="https://note.com/h1idev"
                 target="_blank"
                 rel="noopener noreferrer"
               >
