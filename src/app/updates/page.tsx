@@ -1,5 +1,6 @@
 import { data } from "@/data/updatesData";
 import { UpdatesCard } from "@/components/ui/updatesCard";
+import Footer from "@/components/footer";
 
 export default function UpdateHistory() {
   return (
@@ -17,6 +18,10 @@ export default function UpdateHistory() {
             githubLink={data.githubLink}
           />
         ))}
+      </div>
+
+      <div className="relative mt-20 mb-44">
+        <Footer />
       </div>
     </div>
   );
