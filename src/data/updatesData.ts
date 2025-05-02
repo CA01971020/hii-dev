@@ -1,5 +1,12 @@
 export const data = [
   {
+    id: "20250502-001",
+    title: "hii-dev. Update",
+    date: "2025.05.02",
+    description: `　今までは最小画面のみのスタイリングでしたが、lg(width:1024px)以上の画面にはGridを用いて各セクションを三つずつ横並びに表示するように変更しました。
+    　また、noteとX(旧Twitter)のアカウントidを変更したので、対応するURLに修正しました。`,
+  },
+  {
     id: "20250425-001",
     title: "hii-dev. New Release!!",
     date: "2025.04.25",
