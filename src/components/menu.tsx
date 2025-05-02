@@ -22,7 +22,7 @@ export default function Menu() {
         >
           <IoMdClose className="duration-200 hover:scale-125 text-main select-none text-3xl" />
         </button>
-        <div className=" text-center mt-24">
+        <div className=" text-center mt-24 lg:mt-12">
           <div>
             <div className=" mt-8">
               <Link href="/" onClick={() => setShow(false)}>
@@ -87,7 +87,7 @@ export default function Menu() {
               </NextLink>
             </div>
           </div>
-          <div className="mt-18">
+          <div className="mt-16">
             <small className="copyright text-main font-bold text-xl">
               &copy; hii dev. 2025
             </small>
