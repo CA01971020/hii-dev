@@ -7,7 +7,7 @@ export default function Home() {
     <div className=" relative top-32 mb-20">
       <h1 className="relative text-center">Home</h1>
 
-      <div className="lg:grid lg:grid-cols-2 lg:gap-y-10 lg:gap-x-5">
+      <div className="lg:grid lg:grid-cols-2 lg:gap-y-10 lg:gap-x-5 xl:grid-cols-3">
         <div className="duration-200 hover:scale-103 relative mt-16 bg-white pt-4 pb-5 pr-8 pl-8 ml-8 mr-8 rounded-2xl">
           <h2 className="relatived">Profile</h2>
           <p className="mt-4">

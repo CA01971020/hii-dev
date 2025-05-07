@@ -7,7 +7,7 @@ export default function UpdateHistory() {
     <div className=" relative top-32">
       <h1 className="relative text-center">Update History</h1>
 
-      <div>
+      <div className="lg:grid lg:grid-cols-2 xl:grid-cols-3">
         {data.map((data) => (
           <UpdatesCard
             key={data.id}
