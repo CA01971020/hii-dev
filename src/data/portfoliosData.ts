@@ -1,5 +1,14 @@
 export const portfoliosdata = [
   {
+    id: "hii-dev",
+    title: "hii-dev",
+    url: "https://github.com/CA01971020/hii-dev",
+    period: "2025年4月～",
+    imageUrl: "/hiidev.png",
+    description: `2025年の4月に制作をスタートし、1週間ほどで旧サイトから切り替えました。今後はこちらのサイトをポートフォリオサイトとして公開し、開発を継続していきます。`,
+    techStackTag: ["TypeScript", "Next.js", "TailwindCSS-v4", "Figma"],
+  },
+  {
     id: "kf2025-emb",
     title: "学園祭作品-メッセージボード",
     period: "2025年4月～",
