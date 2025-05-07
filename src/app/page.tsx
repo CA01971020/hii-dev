@@ -63,6 +63,7 @@ export default function Home() {
         <div className="duration-200 hover:scale-103 relative mt-16 bg-white pt-4 pb-6 pr-8 pl-8 ml-8 mr-8 rounded-2xl">
           <h2 className="relatived">Portfolio</h2>
           <div className="mt-4">
+            <p>11 Projects (2 active / 9 completed or paused)</p>
             <NextLink href="/portfolio">
               <CustomButton buttontext="My Portfolios" />
             </NextLink>
