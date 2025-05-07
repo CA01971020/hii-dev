@@ -7,12 +7,14 @@ export default function Portfolios() {
     <div className=" relative top-32">
       <h1 className="relative text-center">Portfolios</h1>
 
-      <div>
+      <div className="lg:grid lg:grid-cols-2">
         {portfoliosdata.map((portfoliosdata) => (
           <PortfolioCard
             key={portfoliosdata.id}
             title={portfoliosdata.title}
+            period={portfoliosdata.period}
             url={portfoliosdata.url}
+            imageUrl={portfoliosdata.imageUrl}
             description={portfoliosdata.description}
             techStackTag={portfoliosdata.techStackTag}
           />
