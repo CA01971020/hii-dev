@@ -63,7 +63,9 @@ export default function Home() {
         <div className="duration-200 hover:scale-103 relative mt-16 bg-white pt-4 pb-6 pr-8 pl-8 ml-8 mr-8 rounded-2xl">
           <h2 className="relatived">Portfolio</h2>
           <div className="mt-4">
-            <p>11 Projects (2 active / 9 completed or paused)</p>
+            <p>
+              11 Projects <br />2 active / 9 completed or paused"
+            </p>
             <NextLink href="/portfolio">
               <CustomButton buttontext="My Portfolios" />
             </NextLink>
@@ -101,7 +103,7 @@ export default function Home() {
         <div className="duration-200 hover:scale-103 relative mt-16 bg-white pt-4 pb-6 pr-8 pl-8 ml-8 mr-8 rounded-2xl">
           <h2 className="relatived">Contact</h2>
           <p className="mt-4">E-Mail</p>
-          <p className="break-words select-text bg-gray-200 text-center rounded-xl">
+          <p className="break-words select-text bg-gray text-center rounded-xl">
             CA01971020@st.kawahara.ac.jp
           </p>
           <p className="mt-1">Twitter DM</p>
