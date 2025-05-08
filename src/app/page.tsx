@@ -64,7 +64,7 @@ export default function Home() {
           <h2 className="relatived">Portfolio</h2>
           <div className="mt-4">
             <p>
-              11 Projects <br />2 active / 9 completed or paused"
+              11 Projects <br />2 active / 9 completed or paused
             </p>
             <NextLink href="/portfolio">
               <CustomButton buttontext="My Portfolios" />
