@@ -8,7 +8,7 @@ export default function Home() {
       <h1 className="relative text-center">Home</h1>
 
       <div className="lg:grid lg:grid-cols-2 lg:gap-y-10 lg:gap-x-5 xl:grid-cols-3">
-        <div className="duration-200 hover:scale-103 relative mt-16 bg-white pt-4 pb-5 pr-8 pl-8 ml-8 mr-8 rounded-2xl">
+        <div className="duration-200 hover:scale-103 relative mt-16 bg-white pt-4 pb-5 pr-8 pl-8 ml-8 mr-8 rounded-2xl shadow-lg shadow-black/50">
           <h2 className="relatived">Profile</h2>
           <p className="mt-4">
             21 years old. <br />
@@ -19,7 +19,7 @@ export default function Home() {
           </p>
         </div>
 
-        <div className="duration-200 hover:scale-103 relative mt-16 bg-white pt-4 pb-5 pr-8 pl-8 ml-8 mr-8 rounded-2xl">
+        <div className="duration-200 hover:scale-103 relative mt-16 bg-white pt-4 pb-5 pr-8 pl-8 ml-8 mr-8 rounded-2xl shadow-lg shadow-black/50">
           <h2 className="relatived">Skills</h2>
           <div className="grid grid-cols-2 gap-4 mt-4">
             <p>
@@ -40,7 +40,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className=" duration-200 hover:scale-103 relative mt-16 bg-white pt-4 pb-6 pr-8 pl-8 ml-8 mr-8 rounded-2xl">
+        <div className=" duration-200 hover:scale-103 relative mt-16 bg-white pt-4 pb-6 pr-8 pl-8 ml-8 mr-8 rounded-2xl shadow-lg shadow-black/50">
           <h2 className="relatived">Blog</h2>
           <p className="mt-4">Zenn / 14 Article / 41 Likes / 5 Flowers</p>
           <a
@@ -60,7 +60,7 @@ export default function Home() {
           </a>
         </div>
 
-        <div className="duration-200 hover:scale-103 relative mt-16 bg-white pt-4 pb-6 pr-8 pl-8 ml-8 mr-8 rounded-2xl">
+        <div className="duration-200 hover:scale-103 relative mt-16 bg-white pt-4 pb-6 pr-8 pl-8 ml-8 mr-8 rounded-2xl shadow-lg shadow-black/50">
           <h2 className="relatived">Portfolio</h2>
           <div className="mt-4">
             <p>
@@ -72,7 +72,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="duration-200 hover:scale-103 relative mt-16 bg-white pt-4 pb-6 pr-8 pl-8 ml-8 mr-8 rounded-2xl">
+        <div className="duration-200 hover:scale-103 relative mt-16 bg-white pt-4 pb-6 pr-8 pl-8 ml-8 mr-8 rounded-2xl shadow-lg shadow-black/50">
           <h2 className="relatived">SNS</h2>
           <div className="grid grid-cols-2 mt-4">
             <div className="space-y-4">
@@ -100,7 +100,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="duration-200 hover:scale-103 relative mt-16 bg-white pt-4 pb-6 pr-8 pl-8 ml-8 mr-8 rounded-2xl">
+        <div className="duration-200 hover:scale-103 relative mt-16 bg-white pt-4 pb-6 pr-8 pl-8 ml-8 mr-8 rounded-2xl shadow-lg shadow-black/50">
           <h2 className="relatived">Contact</h2>
           <p className="mt-4">E-Mail</p>
           <p className="break-words select-text bg-gray text-center rounded-xl">

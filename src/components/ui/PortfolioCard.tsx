@@ -20,7 +20,7 @@ export const PortfolioCard: React.FC<PortfolioCardProps> = ({
   techStackTag,
 }) => {
   return (
-    <div className="duration-200 hover:scale-103 relative mt-16 bg-white pt-6 pb-5 pr-8 pl-8 ml-8 mr-8 rounded-2xl shadow-lg">
+    <div className="duration-200 hover:scale-103 relative mt-16 bg-white pt-6 pb-5 pr-8 pl-8 ml-8 mr-8 rounded-2xl shadow-lg shadow-black/50">
       {imageUrl ? (
         <img
           src={imageUrl}

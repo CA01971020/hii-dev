@@ -18,7 +18,7 @@ export const UpdatesCard: React.FC<UpdatesCardProps> = ({
   githubLink,
 }) => {
   return (
-    <div className="duration-200 hover:scale-103 relative mt-16 bg-white pt-4 pb-5 pr-8 pl-8 ml-8 mr-8 rounded-2xl shadow-lg">
+    <div className="duration-200 hover:scale-103 relative mt-16 bg-white pt-4 pb-5 pr-8 pl-8 ml-8 mr-8 rounded-2xl  shadow-lg shadow-black/50">
       <div className="border border-b-2 border-b-black">
         <h3 className="text-black text-xl">{title}</h3>
       </div>
