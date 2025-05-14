@@ -12,7 +12,7 @@ export const portfoliosdata = [
     id: "kf2025-emb",
     title: "学園祭作品-メッセージボード",
     period: "2025年4月～",
-    imageUrl: "/noimg-hiidev.png",
+    imageUrl: "/emb-hiidev.png",
     description: `現在開発中です。`,
     techStackTag: [
       "TypeScript",
