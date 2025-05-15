@@ -42,7 +42,7 @@ export default function Home() {
 
         <div className=" duration-200 hover:scale-103 relative mt-16 bg-white pt-4 pb-6 pr-8 pl-8 ml-8 mr-8 rounded-2xl shadow-lg shadow-black/50">
           <h2 className="relatived">Blog</h2>
-          <p className="mt-4">Zenn / 14 Article / 41 Likes / 5 Flowers</p>
+          <p className="mt-4">Zenn / 15 Article / 45 Likes / 5 Flowers</p>
           <a
             href="https://zenn.dev/aputech"
             target="_blank"
