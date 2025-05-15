@@ -1,11 +1,46 @@
+"use client";
+
 import NextLink from "next/link";
+import React, { useEffect, useState } from "react";
 import CustomButton from "@/components/ui/button";
 import Footer from "@/components/footer";
+
+const texts = ["test1", "test2", "test3"];
+
+export function TypingAnimation() {
+  const [textIndex, setTextIndex] = useState(0);
+  const [charIndex, setCharIndex] = useState(0);
+  const [displayText, setDisplayText] = useState("");
+
+  useEffect(() => {
+    if (charIndex < texts[textIndex].length) {
+      const timeout = setTimeout(() => {
+        setDisplayText((prev) => prev + texts[textIndex][charIndex]);
+        setCharIndex((prev) => prev + 1);
+      }, 100);
+      return () => clearTimeout(timeout);
+    } else {
+      const delay = setTimeout(() => {
+        setCharIndex(0);
+        setDisplayText("");
+        setTextIndex((prev) => (prev + 1) % texts.length);
+      }, 1500);
+      return () => clearTimeout(delay);
+    }
+  }, [charIndex, textIndex]);
+  return (
+    <div className="flex items-center justify-center h-40 bg-black m-8 rounded-2xl">
+      <p className="text-2xl font-mono !text-white">{displayText}</p>
+    </div>
+  );
+}
 
 export default function Home() {
   return (
     <div className=" relative top-32 mb-20">
       <h1 className="relative text-center">Home</h1>
+
+      <TypingAnimation></TypingAnimation>
 
       <div className="lg:grid lg:grid-cols-2 lg:gap-y-10 lg:gap-x-5 xl:grid-cols-3">
         <div className="duration-200 hover:scale-103 relative mt-16 bg-white pt-4 pb-5 pr-8 pl-8 ml-8 mr-8 rounded-2xl shadow-lg shadow-black/50">
