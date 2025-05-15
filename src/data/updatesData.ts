@@ -1,5 +1,12 @@
 export const data = [
   {
+    id: "20250515-001",
+    title: "Add animation to modal menu",
+    date: "2025.05.15",
+    description: `　ハンバーガーメニューをクリックした後の動作にアニメーションを追加しました。これにより、メニューがフェードイン・フェードアウトするようになりました。ぜひお試しください。
+    　その他の変更点として、タイトル下の線を"border-b-2"から"border-b-1"に変更して細くしました。`,
+  },
+  {
     id: "20250507-001",
     title: "My Portfolio is Public!! 🎉",
     date: "2025.05.07",
