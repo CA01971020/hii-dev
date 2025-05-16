@@ -14,7 +14,7 @@ const texts = [
   "Passionate about beer and reading.",
 ];
 
-export function TypingAnimation() {
+function TypingAnimation() {
   const [textIndex, setTextIndex] = useState(0);
   const [charIndex, setCharIndex] = useState(0);
   const [displayText, setDisplayText] = useState("");
