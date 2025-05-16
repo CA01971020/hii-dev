@@ -76,7 +76,7 @@ export default function Menu() {
 
           {/* コピーライト */}
           <div className="mt-16">
-            <small className="text-main font-bold text-xl">
+            <small className="text-black font-bold text-xl">
               &copy; hii dev. 2025
             </small>
           </div>

@@ -4,7 +4,7 @@ import Footer from "@/components/footer";
 
 export default function UpdateHistory() {
   return (
-    <div className=" relative top-32">
+    <div className=" relative top-32 animate-fade-in">
       <h1 className="relative text-center">Update History</h1>
 
       <div className="lg:grid lg:grid-cols-2 xl:grid-cols-3">

@@ -25,10 +25,10 @@ export const PortfolioCard: React.FC<PortfolioCardProps> = ({
         <img
           src={imageUrl}
           alt={title}
-          className="rounded-md h-60 w-full object-cover"
+          className="rounded-md h-50 w-full object-cover"
         />
       ) : (
-        <div className="bg-black rounded-md h-60 w-full" />
+        <div className="bg-black rounded-md h-50 w-full" />
       )}
       <h2 className="mt-4">{title}</h2>
       {url && (

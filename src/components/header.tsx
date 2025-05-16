@@ -5,7 +5,7 @@ import Menu from "./menu";
 
 export default function Header() {
   return (
-    <div className="flex items-center pt-1 pb-1 bg-turquoise/30 backdrop-blur-md border-b-1 border-b-gray/50">
+    <div className="flex items-center pt-1 pb-1 bg-black/40 backdrop-blur-md border-b-1 border-b-black/10">
       <a
         href="https://github.com/CA01971020"
         target="_blank"
@@ -28,7 +28,7 @@ export default function Header() {
           }}
         />
       </a>
-      <h1 className=" relative left-6 select-none">hii</h1>
+      <h1 className=" relative left-6 select-none !text-white">hii</h1>
       <Menu />
     </div>
   );
