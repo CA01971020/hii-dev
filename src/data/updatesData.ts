@@ -1,5 +1,11 @@
 export const data = [
   {
+    id: "20250516-001",
+    title: "Change the site design",
+    date: "2025.05.16",
+    description: `　旧サイトから継承していた背景色を変更し、シンプルなサイトデザインにしました。`,
+  },
+  {
     id: "20250515-001",
     title: "Add animation to modal menu",
     date: "2025.05.15",
