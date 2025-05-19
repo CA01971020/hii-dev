@@ -54,7 +54,7 @@ export default function Home() {
           <div className="duration-200 hover:scale-103 relative mt-16 bg-white pt-4 pb-5 pr-8 pl-8 ml-8 mr-8 rounded-2xl shadow-lg shadow-black/50 border-1 border-gray">
             <h2>Profile</h2>
             <p className="mt-4">
-              21 years old. <br />
+              22 years old. <br />
               Web Engineer. <br />
               Ehime / Japan. | Next Tokyo. <br />
               Kawahara Computer Business College. <br />
@@ -85,7 +85,7 @@ export default function Home() {
 
           <div className=" duration-200 hover:scale-103 relative mt-16 bg-white pt-4 pb-6 pr-8 pl-8 ml-8 mr-8 rounded-2xl shadow-lg shadow-black/50 border-1 border-gray">
             <h2>Blog</h2>
-            <p className="mt-4">Zenn / 15 Article / 46 Likes / 5 Flowers</p>
+            <p className="mt-4">Zenn / 15 Article / 46 Likes / 6 Flowers</p>
             <a
               href="https://zenn.dev/aputech"
               target="_blank"
