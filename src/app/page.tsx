@@ -36,21 +36,19 @@ function TypingAnimation() {
     }
   }, [charIndex, textIndex]);
   return (
-    <div className="flex items-center justify-center h-20 m-8 rounded-2xl">
-      <p className="!text-xl font-mono">{displayText}</p>
+    <div className="flex items-center justify-center h-screen m-8 rounded-2xl">
+      <p className="!text-xl font-mono animate-fade-in">{displayText}</p>
     </div>
   );
 }
 
 export default function Home() {
   return (
-    <div className=" relative top-32 mb-20">
-      <h1 className="relative text-center">Home</h1>
-
+    <div className=" relative top-0 mb-20">
       <TypingAnimation></TypingAnimation>
 
       <div className="animate-fade-in">
-        <div className="lg:grid lg:grid-cols-2 lg:gap-y-10 lg:gap-x-5 xl:grid-cols-3">
+        <div className="grid gap-y-20 lg:grid-cols-2 lg:gap-y-10 lg:gap-x-5 xl:grid-cols-3">
           <div className="duration-200 hover:scale-103 relative mt-16 bg-white pt-4 pb-5 pr-8 pl-8 ml-8 mr-8 rounded-2xl shadow-lg shadow-black/50 border-1 border-gray">
             <h2>Profile</h2>
             <p className="mt-4">
@@ -158,10 +156,9 @@ export default function Home() {
             </a>
           </div>
         </div>
-      </div>
-
-      <div className="relative mt-20 mb-44">
-        <Footer />
+        <div className="relative mt-40 mb-20">
+          <Footer />
+        </div>
       </div>
     </div>
   );

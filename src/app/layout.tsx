@@ -53,7 +53,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <div className="fixed w-full z-50">
+        <div className="fixed top-0 w-full z-50">
           <Header />
         </div>
         {children}
