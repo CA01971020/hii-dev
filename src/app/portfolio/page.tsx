@@ -21,7 +21,7 @@ export default function Portfolios() {
         ))}
       </div>
 
-      <div className="relative mt-40 mb-20">
+      <div className="relative mt-40 mb-50">
         <Footer />
       </div>
     </div>

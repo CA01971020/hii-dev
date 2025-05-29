@@ -36,7 +36,7 @@ function TypingAnimation() {
     }
   }, [charIndex, textIndex]);
   return (
-    <div className="flex items-center justify-center h-screen m-8 rounded-2xl">
+    <div className="flex items-center justify-center h-screen ml-10 -mt-30 md:-mt-20 mr-10">
       <p className="!text-xl font-mono animate-fade-in">{displayText}</p>
     </div>
   );
@@ -44,7 +44,7 @@ function TypingAnimation() {
 
 export default function Home() {
   return (
-    <div className=" relative top-0 mb-20">
+    <div className=" relative mt-20 top-0">
       <TypingAnimation></TypingAnimation>
 
       <div className="animate-fade-in">
