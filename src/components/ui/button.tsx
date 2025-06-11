@@ -6,7 +6,7 @@ type CustomButtonProps = {
 
 const CustomButton: React.FC<CustomButtonProps> = ({ buttontext }) => {
   return (
-    <button className=" bg-gray hover:bg-hover-gray text-black pt-0.5 pb-0.5 w-full rounded-2xl text-sm">
+    <button className=" bg-stone-200 hover:bg-hover-gray text-black pt-1 pb-1 pr-4 pl-4 rounded text-sm">
       {buttontext}
     </button>
   );
