@@ -11,9 +11,9 @@ export default function Menu() {
   return (
     <>
       {/* ハンバーガーアイコン */}
-      <div className="absolute top-6 right-0 mr-6 pr-3 pl-3 pt-1 z-40">
+      <div className="absolute top-3.5 right-0 mr-6 pr-3 pl-3 pt-1 z-40">
         <button onClick={() => setVisible(true)}>
-          <GiHamburgerMenu className="duration-200 hover:scale-125 select-none text-white text-3xl" />
+          <GiHamburgerMenu className="duration-200 hover:scale-125 select-none text-main text-3xl" />
         </button>
       </div>
 
@@ -41,8 +41,8 @@ export default function Menu() {
         <div className="text-center mt-24 lg:mt-12">
           {[
             { href: "/", label: "Home" },
+            { href: "/blog", label: "Blog" },
             { href: "/portfolio", label: "Portfolio" },
-            { href: "/updates", label: "Update History" },
           ].map((item) => (
             <div key={item.href} className="mt-8">
               <Link href={item.href} onClick={() => setVisible(false)}>
@@ -53,8 +53,6 @@ export default function Menu() {
 
           {/* 外部リンク */}
           {[
-            { href: "https://zenn.dev/aputech", label: "Zenn" },
-            { href: "https://note.com/h1idev", label: "note" },
             { href: "https://x.com/h1idev", label: "Twitter" },
             { href: "https://github.com/CA01971020", label: "GitHub" },
             {
@@ -75,7 +73,7 @@ export default function Menu() {
           ))}
 
           {/* コピーライト */}
-          <div className="mt-16">
+          <div className="mt-20">
             <small className="text-black font-bold text-xl">
               &copy; hii dev. 2025
             </small>

@@ -5,7 +5,7 @@ import Menu from "./menu";
 
 export default function Header() {
   return (
-    <div className="flex items-center pt-1 pb-1 bg-black/40 backdrop-blur-md border-b-1 border-b-black/10">
+    <div className="flex items-center pt-1 pb-1 border-b-1 border-stone-200 backdrop-blur-md">
       <a
         href="https://github.com/CA01971020"
         target="_blank"
@@ -21,14 +21,14 @@ export default function Header() {
             borderRadius: "50%",
           }}
           imgStyle={{
-            width: "60px",
-            height: "60px",
+            width: "44px",
+            height: "44px",
             objectFit: "cover",
             borderRadius: "50%",
           }}
         />
       </a>
-      <h1 className=" relative left-6 select-none !text-white">hii</h1>
+      <h1 className=" relative left-6 select-none !text-black">hii</h1>
       <Menu />
     </div>
   );
