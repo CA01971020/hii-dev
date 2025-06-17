@@ -18,7 +18,7 @@ export const BlogCard: React.FC<BlogCardProps> = ({
   platform,
 }) => {
   return (
-    <div className="duration-200 hover:scale-103 relative pt-6 pb-4 pr-4 pl-4 ml-4 mr-4 border-1 border-gray rounded">
+    <div className="duration-200 hover:scale-103 relative pt-6 pb-4 pr-4 pl-4 ml-4 mr-4  border-1 border-gray bg-stone-100 rounded">
       <p className="!text-stone-500">{date}</p>
       <h2>{title}</h2>
       <p className="mt-4">{description}</p>
