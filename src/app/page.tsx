@@ -126,8 +126,8 @@ export default function Home() {
                 <FaRegHandPointUp className="text-black" />
                 しずかなインターネット
                 <MdArrowOutward />
-                <p>2 Article / miscellaneous notes</p>
               </a>
+              <p>2 Article / miscellaneous notes</p>
             </div>
             <div className=" mt-6 flex justify-center">
               <NextLink href="/blog">
