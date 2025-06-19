@@ -114,7 +114,7 @@ export default function Home() {
                 note
                 <MdArrowOutward />
               </a>
-              <p>4 Article / 23 Likes / 6670 Views</p>
+              <p>4 Article / 23 Likes / 6700 Views</p>
             </div>
             <div className="mt-4">
               <a
@@ -126,6 +126,7 @@ export default function Home() {
                 <FaRegHandPointUp className="text-black" />
                 しずかなインターネット
                 <MdArrowOutward />
+                <p>2 Article / miscellaneous notes</p>
               </a>
             </div>
             <div className=" mt-6 flex justify-center">
