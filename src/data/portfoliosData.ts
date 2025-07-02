@@ -1,17 +1,23 @@
 export const portfoliosdata = [
   {
-    id: "hii-dev",
-    title: "hii-dev",
-    url: "https://github.com/CA01971020/hii-dev",
-    period: "2025年4月～",
-    imageUrl: "/hiidev.png",
-    description: `2025年の4月に制作をスタートし、1週間ほどで旧サイトから切り替えました。今後はこちらのサイトをポートフォリオサイトとして公開し、開発を継続していきます。`,
-    techStackTag: ["TypeScript", "Next.js", "TailwindCSS-v4", "Figma"],
+    id: "linebot",
+    title: "定期連絡BOT",
+    period: "2025年7月",
+    imageUrl: "/noimg-hiidev.png",
+    description: `シフト希望提出日の朝9時にメッセージを送信してシフト提出日であることを教えてくれるLINEのBOTを作成しました。`,
+    techStackTag: [
+      "Python",
+      "Azure",
+      "LINE公式アカウント",
+      "LINE Developer",
+      "Canva",
+      "ChatGPT",
+    ],
   },
   {
     id: "kf2025-emb",
     title: "学園祭作品-メッセージボード",
-    period: "2025年4月～6月",
+    period: "2025年4月～7月",
     imageUrl: "/emb-hiidev.png",
     description: `専門学校4年次の学園祭展示作品として個人で制作しています。メッセージボードをWEBアプリとして構築し、ユーザーがメッセージを投稿できるよう開発しました。`,
     techStackTag: [
@@ -31,6 +37,15 @@ export const portfoliosdata = [
       "ChatGPT",
       "GitHub Copilot",
     ],
+  },
+  {
+    id: "hii-dev",
+    title: "hii-dev",
+    url: "https://github.com/CA01971020/hii-dev",
+    period: "2025年4月～",
+    imageUrl: "/hiidev.png",
+    description: `2025年の4月に制作をスタートし、1週間ほどで旧サイトから切り替えました。今後はこちらのサイトをポートフォリオサイトとして公開し、開発を継続していきます。`,
+    techStackTag: ["TypeScript", "Next.js", "TailwindCSS-v4", "Figma"],
   },
   {
     id: "simplediary",
