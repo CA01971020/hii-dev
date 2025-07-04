@@ -1,5 +1,13 @@
 export const blogdata = [
   {
+    id: "b-0014",
+    title: "ReactでURL直打ち対策",
+    date: "2025.06.27",
+    description: `学園祭用の作品をReact（Vite）で開発中に、URLの直打ちでページをスキップできてしまうことに気づいたので、実施したフロントエンド側の対策方法を記事にまとめる。`,
+    url: "https://zenn.dev/aputech/articles/2c70e0236c2cbd",
+    platform: "Zenn",
+  },
+  {
     id: "b-0013",
     title: "情報系学生4年目の年にやること（2025年度）",
     date: "2025.05.14",
