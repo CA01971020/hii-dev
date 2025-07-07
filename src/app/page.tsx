@@ -127,7 +127,7 @@ export default function Home() {
                 しずかなインターネット
                 <MdArrowOutward />
               </a>
-              <p>3 Article / miscellaneous notes</p>
+              <p>4 Article / miscellaneous notes</p>
             </div>
             <div className=" mt-6 flex justify-center">
               <NextLink href="/blog">
