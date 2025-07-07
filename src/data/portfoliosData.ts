@@ -3,7 +3,7 @@ export const portfoliosdata = [
     id: "linebot",
     title: "定期連絡BOT",
     period: "2025年7月",
-    imageUrl: "/noimg-hiidev.png",
+    imageUrl: "/linebot-hiidev.png",
     description: `シフト希望提出日の朝9時にメッセージを送信してシフト提出日であることを教えてくれるLINEのBOTを作成しました。`,
     techStackTag: [
       "Python",
