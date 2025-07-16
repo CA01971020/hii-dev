@@ -102,7 +102,7 @@ export default function Home() {
                 <MdArrowOutward />
               </a>
 
-              <p>16 Article / 53 Likes / 9 Flowers</p>
+              <p>16 Article / 55 Likes / 9 Flowers</p>
             </div>
             <div className="mt-1">
               <a
@@ -140,7 +140,7 @@ export default function Home() {
             <h2 className=" border-b-1 border-stone-200 pb-1">PORTFOLIO</h2>
             <div className="mt-4">
               <p>
-                12 Projects <br />3 active / 9 completed or paused
+                12 Projects <br />2 active / 10 completed or paused
               </p>
               <div className=" mt-6 flex justify-center">
                 <NextLink href="/portfolio">
