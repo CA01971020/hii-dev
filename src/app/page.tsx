@@ -102,7 +102,7 @@ export default function Home() {
                 <MdArrowOutward />
               </a>
 
-              <p>16 Article / 55 Likes / 9 Flowers</p>
+              <p>16 Article / 55 Likes / 10 Flowers</p>
             </div>
             <div className="mt-1">
               <a
