@@ -17,6 +17,7 @@ export const portfoliosdata = [
   {
     id: "kf2025-emb",
     title: "学園祭作品-メッセージボード",
+    url: "https://messageboard.site/",
     period: "2025年4月～7月",
     imageUrl: "/emb-hiidev.png",
     description: `専門学校4年次の学園祭展示作品として個人で制作しています。メッセージボードをWEBアプリとして構築し、ユーザーがメッセージを投稿できるよう開発しました。`,
