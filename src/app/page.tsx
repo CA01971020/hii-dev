@@ -114,7 +114,7 @@ export default function Home() {
                 note
                 <MdArrowOutward />
               </a>
-              <p>4 Article / 23 Likes / 6700 Views</p>
+              <p>4 Article / 24 Likes / 6800 Views</p>
             </div>
             <div className="mt-4">
               <a
@@ -127,7 +127,7 @@ export default function Home() {
                 しずかなインターネット
                 <MdArrowOutward />
               </a>
-              <p>4 Article / miscellaneous notes</p>
+              <p>5 Article / miscellaneous notes</p>
             </div>
             <div className=" mt-6 flex justify-center">
               <NextLink href="/blog">
