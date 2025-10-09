@@ -1,5 +1,21 @@
 export const blogdata = [
   {
+    id: "b-0016",
+    title: "GooglePixel6aからiPhone17に機種変更して思ったこと・遭遇したこと。",
+    date: "2025.10.09",
+    description: `機種変更して思ったことや遭遇したことを順不同で雑にまとめていきたいと思います。`,
+    url: "https://note.com/h1idev/n/n48408bce04a6",
+    platform: "note",
+  },
+  {
+    id: "b-0015",
+    title: "RenderにデプロイするPythonアプリのVersionを指定する方法",
+    date: "2025.10.07",
+    description: `RenderにデプロイするPythonアプリのVersionを指定する方法は2つあるようなので紹介したいと思います。`,
+    url: "https://zenn.dev/aputech/articles/53c3e8decc941c",
+    platform: "Zenn",
+  },
+  {
     id: "b-0014",
     title: "ReactでURL直打ち対策",
     date: "2025.06.27",
