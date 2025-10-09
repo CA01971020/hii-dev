@@ -1,5 +1,20 @@
 export const portfoliosdata = [
   {
+    id: "tlsht",
+    title: "TheLastSpell 英雄保存ツール",
+    period: "2025年6月～",
+    imageUrl: "/tlsht-hiidev.png",
+    description: `ローグライクなターン制戦略RPG作品であるTheLastSpellの英雄データをメモしておくためのWEBサイトです。`,
+    techStackTag: [
+      "TypeScript",
+      "React",
+      "Python",
+      "FastAPI",
+      "Render",
+      "Neon PostgreSQL",
+    ],
+  },
+  {
     id: "linebot",
     title: "定期連絡BOT",
     period: "2025年7月",
