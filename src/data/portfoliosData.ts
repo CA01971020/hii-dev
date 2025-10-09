@@ -2,6 +2,7 @@ export const portfoliosdata = [
   {
     id: "tlsht",
     title: "TheLastSpell 英雄保存ツール",
+    url: "https://thelastspell-herotool.vercel.app/",
     period: "2025年6月～",
     imageUrl: "/tlsht-hiidev.png",
     description: `ローグライクなターン制戦略RPG作品であるTheLastSpellの英雄データをメモしておくためのWEBサイトです。`,
