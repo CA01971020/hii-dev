@@ -9,10 +9,11 @@ export const portfoliosdata = [
     techStackTag: [
       "TypeScript",
       "React",
-      "Python",
-      "FastAPI",
-      "Render",
-      "Neon PostgreSQL",
+      "TailwindCSS",
+      // "Python",
+      // "FastAPI",
+      // "Render",
+      // "Neon PostgreSQL",
     ],
   },
   {
