@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/header";
 import { Analytics } from "@vercel/analytics/next";
+import Providers from "@/components/providers";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -26,7 +27,7 @@ export const metadata: Metadata = {
     siteName: "hii dev",
     images: [
       {
-        url: "https://hiidev.vercel.app/ogp.jpg", // 公開URL
+        url: "https://hiidev.vercel.app/ogp.jpg",
         width: 1200,
         height: 630,
         alt: "hii dev OGP Image",
@@ -46,19 +47,21 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <html lang="ja">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <div className="fixed top-0 w-full z-50">
-          <Header />
-        </div>
-        {children}
-        <Analytics />
+        <Providers>
+          <div className="fixed top-0 w-full z-50">
+            <Header />
+          </div>
+          {children}
+          <Analytics />
+        </Providers>
       </body>
     </html>
   );
