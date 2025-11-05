@@ -8,15 +8,16 @@ export default function Portfolios() {
       <h1 className="relative text-center">Portfolios</h1>
 
       <div className="mt-16 grid gap-y-20 lg:grid-cols-2 lg:gap-y-10 lg:gap-x-5 xl:grid-cols-3">
-        {portfoliosdata.map((portfoliosdata) => (
+        {portfoliosdata.map((portfolio) => (
           <PortfolioCard
-            key={portfoliosdata.id}
-            title={portfoliosdata.title}
-            period={portfoliosdata.period}
-            url={portfoliosdata.url}
-            imageUrl={portfoliosdata.imageUrl}
-            description={portfoliosdata.description}
-            techStackTag={portfoliosdata.techStackTag}
+            key={portfolio.id}
+            title={portfolio.title}
+            period={portfolio.period}
+            url={portfolio.url}
+            imageUrl={portfolio.imageUrl}
+            description={portfolio.description}
+            techStackTag={portfolio.techStackTag}
+            status={portfolio.status}
           />
         ))}
       </div>

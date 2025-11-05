@@ -1,9 +1,12 @@
-export const portfoliosdata = [
+import type { PortfolioData } from "@/types/PortfolioStatus";
+
+export const portfoliosdata: PortfolioData[] = [
   {
     id: "tlsht",
     title: "TheLastSpell 英雄保存ツール",
     url: "https://thelastspell-herotool.vercel.app/",
     period: "2025年6月～",
+    status: "ongoing",
     imageUrl: "/tlsht-hiidev.png",
     description: `ローグライクなターン制戦略RPG作品であるTheLastSpellの英雄データをメモしておくためのWEBサイトです。`,
     techStackTag: [
@@ -20,6 +23,7 @@ export const portfoliosdata = [
     id: "linebot",
     title: "定期連絡BOT",
     period: "2025年7月",
+    status: "paused",
     imageUrl: "/linebot-hiidev.png",
     description: `シフト希望提出日の朝9時にメッセージを送信してシフト提出日であることを教えてくれるLINEのBOTを作成しました。`,
     techStackTag: [
@@ -36,6 +40,7 @@ export const portfoliosdata = [
     title: "学園祭作品-メッセージボード",
     url: "https://embapp.vercel.app/",
     period: "2025年4月～7月",
+    status: "paused",
     imageUrl: "/2025kf-hiidev.png",
     description: `専門学校4年次の学園祭展示作品として個人で制作しています。メッセージボードをWEBアプリとして構築し、ユーザーがメッセージを投稿できるよう開発しました。`,
     techStackTag: [
@@ -61,6 +66,7 @@ export const portfoliosdata = [
     title: "hii-dev",
     url: "https://github.com/CA01971020/hii-dev",
     period: "2025年4月～",
+    status: "completed",
     imageUrl: "/hiidev.png",
     description: `2025年の4月に制作をスタートし、1週間ほどで旧サイトから切り替えました。今後はこちらのサイトをポートフォリオサイトとして公開し、開発を継続していきます。`,
     techStackTag: ["TypeScript", "Next.js", "TailwindCSS-v4", "Figma"],
@@ -70,6 +76,7 @@ export const portfoliosdata = [
     title: "simple-diary",
     url: "https://simple-diary.streamlit.app/",
     period: "2025年1月～2025年2月",
+    status: "paused",
     imageUrl: "/sds-hiidev.png",
     description: `FastAPIの勉強で作成したWEBアプリです。streamlitの起動に時間が掛かる場合があります。`,
     techStackTag: ["Python", "FastAPI", "Streamlit", "Figma"],
@@ -79,6 +86,7 @@ export const portfoliosdata = [
     title: "不正解がないクイズゲーム",
     url: "https://no-wrong-answer-quiz-game.vercel.app/",
     period: "2025年1月～2025年2月",
+    status: "paused",
     imageUrl: "/nwaq-hiidev.png",
     description: `アイデアを形にしただけのWEBアプリです。今後、機能やデザインを変更する可能性があります。`,
     techStackTag: ["TypeScript", "React", "TailwindCSS-v3", "Figma"],
@@ -88,6 +96,7 @@ export const portfoliosdata = [
     title: "リアルデイリー",
     url: "https://realdaily.vercel.app/",
     period: "2024年9月～2025年1月",
+    status: "paused",
     imageUrl: "/realdaily-hiidev.png",
     description: `デイリークエストの概念から着想を得たWEBアプリです。Firebaseを使用してクエストデータを送信しています。`,
     techStackTag: [
@@ -104,6 +113,7 @@ export const portfoliosdata = [
     title: "四字熟語を作るWEBアプリ",
     url: "https://yojijyukugo.vercel.app/",
     period: "2024年8月～2025年5月",
+    status: "completed",
     imageUrl: "/yoji-hiidev.png",
     description: `四字熟語を簡単に作れるWEBアプリです。メインの機能は数時間で作成し、簡単なコードで動いています。改善案は多数あり、現在は開発を停止しています。`,
     techStackTag: ["TypeScript", "React", "TailwindCSS-v3"],
@@ -113,6 +123,7 @@ export const portfoliosdata = [
     title: "hii-site(旧サイト)",
     url: "https://github.com/CA01971020/hii-site",
     period: "2024年6月～2025年5月",
+    status: "paused",
     imageUrl: "/hiisite-hiidev.png",
     description: `自己紹介サイトとして制作した旧サイトです。Next.jsとTailwindCSSを採用し、継続的に開発を行っていました。新サイトの制作と公開によって、継続開発は終了しました。現在は公開していません。`,
     techStackTag: ["TypeScript", "Next.js", "Figma", "TailwindCSS-v3"],
@@ -121,6 +132,7 @@ export const portfoliosdata = [
     id: "kf2024-eg2",
     title: "学園祭作品-脱出ゲーム2",
     period: "2024年5月～2024年7月",
+    status: "paused",
     imageUrl: "/2024kf-hiidev.png",
     description: `専門学校3年次の学園祭展示作品としてチームで制作しました。開発期間は約2ヵ月と短いなかで、リーダーとして企画・設計、進捗管理、チームマネジメント、コーディングなど幅広く取り組みました。最終的なクオリティは当初の想定より大幅に縮小されたものになりました。`,
     techStackTag: ["HTML", "CSS", "JavaScript", "Figma"],
@@ -129,6 +141,7 @@ export const portfoliosdata = [
     id: "tabetaramemo",
     title: "食べたらメモ",
     period: "2023年9月～2024年2月",
+    status: "paused",
     imageUrl: "/tabetara-hiidev.png",
     description: `ReactNativeで実現しようとしたPJです。ネイティブアプリの開発とWEBサイトの制作に取り組んでいましたが、勉強不足・技術不足・開発の長期化などの理由で開発を終了しました。`,
     techStackTag: ["TypeScript", "React Native", "Expo"],
@@ -137,6 +150,7 @@ export const portfoliosdata = [
     id: "kf2023-eg1",
     title: "学園祭作品-脱出ゲーム1",
     period: "2023年4月～2023年7月",
+    status: "paused",
     imageUrl: "/2023kf-hiidev.png",
     description: `専門学校2年次の学園祭展示作品としてチームで制作しました。1年次に学習した技術を中心に構成し、ChatGPTを活用して技術・知識の不足を補いました。`,
     techStackTag: ["HTML", "CSS", "JavaScript", "ChatGPT"],
@@ -145,6 +159,7 @@ export const portfoliosdata = [
     id: "fst-site",
     title: "WEBサイト",
     period: "2023年4月～2023年7月",
+    status: "paused",
     imageUrl: "/noimg-hiidev.png",
     description: `専門学校1年次に学んだBootStrap5を使用してWEBサイトを制作しました。ConohaのVPSを契約し、授業の復習も兼ねて自分で構築しました。現在は公開していません。`,
     techStackTag: ["HTML", "CSS", "BootStrap5", "VPS", "ChatGPT"],
