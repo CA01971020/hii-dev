@@ -4,6 +4,9 @@ import NextLink from "next/link";
 import React, { useEffect, useState } from "react";
 import CustomButton from "@/components/ui/button";
 import Footer from "@/components/footer";
+import ZennStats from "@/components/stats/ZennStats";
+import NoteStats from "@/components/stats/NoteStats";
+import ShizumeStats from "@/components/stats/ShizumeStats";
 import { MdArrowOutward } from "react-icons/md";
 import { FaSquareXTwitter } from "react-icons/fa6";
 import { FaSquareGithub } from "react-icons/fa6";
@@ -101,8 +104,7 @@ export default function Home() {
                 Zenn
                 <MdArrowOutward />
               </a>
-
-              <p>17 Article / 60 Likes / 10 Flowers</p>
+              <ZennStats />
             </div>
             <div className="mt-1">
               <a
@@ -114,7 +116,7 @@ export default function Home() {
                 note
                 <MdArrowOutward />
               </a>
-              <p>6 Article / 70 Likes / 20500 Views</p>
+              <NoteStats />
             </div>
             <div className="mt-4">
               <a
@@ -127,7 +129,7 @@ export default function Home() {
                 しずかなインターネット
                 <MdArrowOutward />
               </a>
-              <p>6 Article / miscellaneous notes</p>
+              <ShizumeStats />
             </div>
             <div className=" mt-6 flex justify-center">
               <NextLink href="/blog">
