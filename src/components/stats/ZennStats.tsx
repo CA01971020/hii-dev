@@ -21,7 +21,7 @@ export default function ZennStats() {
 
   if (isLoading)
     return (
-      <p className="text-gray-500 text-sm">
+      <p className="text-gray-500 text-sm whitespace-nowrap">
         <span className="inline-block rounded animate-pulse">00</span> Articles
         {" / "}
         <span className="inline-block rounded animate-pulse">00</span> Likes
