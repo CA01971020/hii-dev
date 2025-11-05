@@ -34,10 +34,13 @@ export const PortfolioCard: React.FC<PortfolioCardProps> = ({
   return (
     <div className="duration-200 hover:scale-103 relative bg-stone-100 pt-6 pb-4 pr-4 pl-4 ml-4 mr-4 border-1 border-gray rounded">
       {imageUrl ? (
-        <img
+        <Image
           src={imageUrl}
           alt={title}
-          className="rounded-md h-50 w-full object-cover"
+          width={600}
+          height={240}
+          quality={100}
+          className="rounded-md w-full object-cover"
         />
       ) : (
         <div className="bg-gray-300 w-full h-full rounded-md" />
