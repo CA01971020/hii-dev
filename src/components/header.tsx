@@ -13,7 +13,7 @@ export default function Header() {
         className=" select-none pt-1 pl-4 pb-1 duration-200 hover:scale-110"
       >
         <CirclePhotoCard
-          src="/hii-pf-icon.jpg"
+          src="/hii-pf-icon.svg"
           altText="プロフィール写真"
           imgWrapperStyle={{
             padding: "4px",

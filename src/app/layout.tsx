@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     siteName: "hii dev",
     images: [
       {
-        url: "https://hiidev.vercel.app/ogp.jpg",
+        url: "https://hiidev.vercel.app/ogp.svg",
         width: 1200,
         height: 630,
         alt: "hii dev OGP Image",
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     title: "hii dev",
     description:
       "情報系専門学生のポートフォリオサイト。Next.js, TypeScript, Tailwind CSSで構築。",
-    images: ["https://hiidev.vercel.app/ogp.jpg"],
+    images: ["https://hiidev.vercel.app/ogp.svg"],
   },
 };
 
