@@ -1,5 +1,14 @@
 export const blogdata = [
   {
+    id: "b-0017",
+    title:
+      "「朝起きたらiPhone17が..息をしていないんだ！！」iPhone17故障？起動しなくなった話。",
+    date: "2025.12.02",
+    description: `iPhone17 購入して1ヶ月でお亡くなり？？？？？？`,
+    url: "https://note.com/h1idev/n/n00fb7f1fb6e0",
+    platform: "note",
+  },
+  {
     id: "b-0016",
     title: "GooglePixel6aからiPhone17に機種変更して思ったこと・遭遇したこと。",
     date: "2025.10.09",
