@@ -47,7 +47,7 @@ function TypingAnimation() {
   }, [charIndex, textIndex]);
   return (
     <div className="flex items-center justify-center mt-20 h-40 mr-6 ml-6 rounded-2xl lg:h-screen lg:mt-0">
-      <p className="!text-lg font-mono animate-fade-in">{displayText}</p>
+      <p className="text-lg! font-mono animate-fade-in">{displayText}</p>
     </div>
   );
 }
@@ -60,7 +60,7 @@ export default function Home() {
       <div className="animate-fade-in">
         <div className="grid gap-y-10 lg:grid-cols-2 lg:gap-y-10 lg:gap-x-5 xl:grid-cols-3">
           <div className="duration-200 hover:scale-103 relativ pt-4 pb-5 pr-4  pl-4 ml-4 mr-4 rounded-2xl ">
-            <h2 className=" border-b-1 border-stone-200 pb-1 ">PROFILE</h2>
+            <h2 className=" border-b border-stone-200 pb-1 ">PROFILE</h2>
             <div className="mt-4">
               <p>hii / Haruto Higashimoto.</p>
               <p>Web Engineer. </p>
@@ -71,7 +71,7 @@ export default function Home() {
           </div>
 
           <div className="duration-200 hover:scale-103 relative bg-white pt-4 pb-5 pr-4 pl-4 ml-4 mr-4 ">
-            <h2 className=" border-b-1 border-stone-200 pb-1">SKILLS</h2>
+            <h2 className=" border-b border-stone-200 pb-1">SKILLS</h2>
             <div className="grid grid-cols-2 gap-4 mt-4">
               <p>
                 HTML5 <br />
@@ -92,7 +92,7 @@ export default function Home() {
           </div>
 
           <div className=" duration-200 hover:scale-103 relative bg-white pt-4 pb-6 pr-4 pl-4 ml-4 mr-4">
-            <h2 className=" border-b-1 border-stone-200 pb-1">BLOG</h2>
+            <h2 className=" border-b border-stone-200 pb-1">BLOG</h2>
             <div className="mt-4">
               <a
                 href="https://zenn.dev/aputech"
@@ -139,7 +139,7 @@ export default function Home() {
           </div>
 
           <div className="duration-200 hover:scale-103 relative pt-4 pb-6 pr-4 pl-4 ml-4 mr-4 ">
-            <h2 className=" border-b-1 border-stone-200 pb-1">PORTFOLIO</h2>
+            <h2 className=" border-b border-stone-200 pb-1">PORTFOLIO</h2>
             <div className="mt-4">
               <p>
                 13 Projects <br />2 active / 11 completed or paused
@@ -153,7 +153,7 @@ export default function Home() {
           </div>
 
           <div className="duration-200 hover:scale-103 relative pt-4 pb-6 pr-4 pl-4 ml-4 mr-4">
-            <h2 className=" border-b-1 border-stone-200 pb-1">SNS</h2>
+            <h2 className=" border-b border-stone-200 pb-1">SNS</h2>
             <div className="mt-4 space-x-4 flex">
               <a
                 href="https://x.com/h1idev"
@@ -183,14 +183,14 @@ export default function Home() {
           </div>
 
           <div className="duration-200 hover:scale-103 relative pt-4 pb-6 pr-4 pl-4 ml-4 mr-4">
-            <h2 className="relatived  border-b-1 border-stone-200 pb-1">
+            <h2 className="relatived  border-b border-stone-200 pb-1">
               CONTACT
             </h2>
             <div className=" flex mt-4">
               <IoMail className="text-black text-3xl" />
               <p className=" pt-0.5 pl-2">E-Mail</p>
             </div>
-            <p className="break-words select-text mt-1">
+            <p className="wrap-break-word select-text mt-1">
               CA01971020@st.kawahara.ac.jp
             </p>
             <div className=" flex mt-4">
@@ -202,7 +202,7 @@ export default function Home() {
               >
                 <div className="text-sky-500 flex gap-0.5">
                   <FaSquareXTwitter className="text-black text-3xl" />
-                  <p className="pt-0.5 pl-2 !text-sky-500">Twitter DM</p>
+                  <p className="pt-0.5 pl-2 text-sky-500!">Twitter DM</p>
                   <MdArrowOutward />
                 </div>
               </a>
