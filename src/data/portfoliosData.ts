@@ -2,6 +2,16 @@ import type { PortfolioData } from "@/types/PortfolioStatus";
 
 export const portfoliosdata: PortfolioData[] = [
   {
+    id: "notebot",
+    title: "noteBot",
+    url: "https://github.com/CA01971020/note_bot",
+    period: "2025年12月",
+    status: "paused",
+    imageUrl: "/notebot-hiidev.png",
+    description: `CLIからLINEにメッセージを送信できるLINE Botです。`,
+    techStackTag: ["Python", "LINE公式アカウント", "LINE Developer"],
+  },
+  {
     id: "tlsht",
     title: "TheLastSpell 英雄保存ツール",
     url: "https://thelastspell-herotool.vercel.app/",
