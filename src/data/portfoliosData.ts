@@ -2,6 +2,16 @@ import type { PortfolioData } from "@/types/PortfolioStatus";
 
 export const portfoliosdata: PortfolioData[] = [
   {
+    id: "yojizougo",
+    title: "Yoji Zougo",
+    url: "https://yoji-zougo.vercel.app/",
+    period: "2025年12月～",
+    status: "ongoing",
+    imageUrl: "/NewYoji-hiidev.png",
+    description: `以前開発した"yojijyukugo"をベースに生まれ変わった、四字熟語の造語サービス`,
+    techStackTag: ["TypeScript", "Next.js", "TailwindCSS", "node.js"],
+  },
+  {
     id: "notebot",
     title: "noteBot",
     url: "https://github.com/CA01971020/note_bot",
@@ -123,9 +133,9 @@ export const portfoliosdata: PortfolioData[] = [
     title: "四字熟語を作るWEBアプリ",
     url: "https://yojijyukugo.vercel.app/",
     period: "2024年8月～2025年5月",
-    status: "completed",
+    status: "paused",
     imageUrl: "/yoji-hiidev.svg",
-    description: `四字熟語を簡単に作れるWEBアプリです。メインの機能は数時間で作成し、簡単なコードで動いています。改善案は多数あり、現在は開発を停止しています。`,
+    description: `四字熟語を簡単に作れるWEBアプリです。メインの機能は数時間で作成し、簡単なコードで動いています。本WEBアプリを基に再設計した新たなWEBアプリを開発中です。`,
     techStackTag: ["TypeScript", "React", "TailwindCSS-v3"],
   },
   {
