@@ -1,5 +1,14 @@
 export const blogdata = [
   {
+    id: "b-0018",
+    title:
+      "【失敗談】アパ直（アパホテル）で宿泊日を間違えて当日予約してしまった話。",
+    date: "2026.01.08",
+    description: `完全に僕の不注意ですが、タイトルの通り、アパ直で宿泊日を間違えて当日予約してしまいました。`,
+    url: "https://note.com/h1idev/n/n37280c1a6474",
+    platform: "note",
+  },
+  {
     id: "b-0017",
     title:
       "「朝起きたらiPhone17が..息をしていないんだ！！」iPhone17故障？起動しなくなった話。",
