@@ -1,85 +1,124 @@
 "use client";
 
-import React, { useState } from "react";
+import { useState } from "react";
+import Link from "next/link";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoMdClose } from "react-icons/io";
-import Link from "next/link";
+
+type MenuItem = {
+  href: string;
+  label: string;
+  external?: boolean;
+};
+
+const INTERNAL_LINKS: MenuItem[] = [
+  { href: "/", label: "Home" },
+  { href: "/blog", label: "Blog" },
+  { href: "/portfolio", label: "Portfolio" },
+];
+
+const EXTERNAL_LINKS: MenuItem[] = [
+  { href: "https://x.com/h1idev", label: "Twitter", external: true },
+  { href: "https://github.com/CA01971020", label: "GitHub", external: true },
+  {
+    href: "mailto:CA01971020@st.kawahara.ac.jp",
+    label: "E-Mail",
+    external: true,
+  },
+];
 
 export default function Menu() {
   const [visible, setVisible] = useState(false);
 
   return (
     <>
-      {/* ハンバーガーアイコン */}
-      <div className="absolute top-3.5 right-0 mr-6 pr-3 pl-3 pt-1 z-40">
-        <button onClick={() => setVisible(true)}>
-          <GiHamburgerMenu className="duration-200 hover:scale-125 select-none text-main text-3xl" />
-        </button>
-      </div>
+      {/* ハンバーガーボタン */}
+      <MenuButton onClick={() => setVisible(true)}>
+        <GiHamburgerMenu />
+      </MenuButton>
 
-      {/* メニュー本体 */}
+      {/* メニュー */}
       <div
-        className={`
-          fixed top-0 left-0 w-full h-screen bg-white z-40
-          transition-all duration-500 ease-in-out
+        className={`fixed inset-0 z-40 h-screen bg-white transition-all duration-500 ease-in-out
           ${
             visible
               ? "opacity-100 translate-y-0 pointer-events-auto"
               : "opacity-0 -translate-y-full pointer-events-none"
-          }
-        `}
+          }`}
       >
         {/* 閉じるボタン */}
-        <button
-          className="absolute top-6 right-0 mr-6 pr-3 pl-3 pt-1"
-          onClick={() => setVisible(false)}
-        >
-          <IoMdClose className="duration-200 hover:scale-125 text-main select-none text-3xl z-50" />
-        </button>
+        <MenuButton onClick={() => setVisible(false)} ariaLabel="Close menu">
+          <IoMdClose />
+        </MenuButton>
 
-        {/* メニュー項目 */}
-        <div className="text-center mt-24 lg:mt-12">
-          {[
-            { href: "/", label: "Home" },
-            { href: "/blog", label: "Blog" },
-            { href: "/portfolio", label: "Portfolio" },
-          ].map((item) => (
-            <div key={item.href} className="mt-8">
-              <Link href={item.href} onClick={() => setVisible(false)}>
-                <h2 className="duration-300 hover:scale-125">{item.label}</h2>
-              </Link>
-            </div>
-          ))}
+        <div className="mt-24 text-center lg:mt-12">
+          <MenuList items={INTERNAL_LINKS} onClick={() => setVisible(false)} />
+          <MenuList items={EXTERNAL_LINKS} />
 
-          {/* 外部リンク */}
-          {[
-            { href: "https://x.com/h1idev", label: "Twitter" },
-            { href: "https://github.com/CA01971020", label: "GitHub" },
-            {
-              href: "mailto:CA01971020@st.kawahara.ac.jp",
-              label: "E-Mail",
-            },
-          ].map((item) => (
-            <div key={item.href} className="mt-8">
-              <a
-                href={item.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="block"
-              >
-                <h2 className="duration-300 hover:scale-125">{item.label}</h2>
-              </a>
-            </div>
-          ))}
-
-          {/* コピーライト */}
-          <div className="mt-20">
-            <small className="text-black font-bold text-xl">
-              &copy; hii dev. 2025
+          <footer className="mt-20">
+            <small className="text-xl font-bold text-black">
+              &copy; hii dev. {new Date().getFullYear()}
             </small>
-          </div>
+          </footer>
         </div>
       </div>
     </>
+  );
+}
+
+function MenuButton({
+  children,
+  onClick,
+  ariaLabel = "Open menu",
+}: {
+  children: React.ReactNode;
+  onClick: () => void;
+  ariaLabel?: string;
+}) {
+  return (
+    <div className="absolute right-0 top-3.5 z-40 mr-6 px-3 pt-1">
+      <button onClick={onClick} aria-label={ariaLabel}>
+        <span className="select-none text-3xl text-black duration-200 hover:scale-125">
+          {children}
+        </span>
+      </button>
+    </div>
+  );
+}
+
+function MenuList({
+  items,
+  onClick,
+}: {
+  items: MenuItem[];
+  onClick?: () => void;
+}) {
+  return (
+    <>
+      {items.map(({ href, label, external }) => (
+        <div key={href} className="mt-8 text-center">
+          {external ? (
+            <a
+              href={href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block"
+            >
+              <MenuText>{label}</MenuText>
+            </a>
+          ) : (
+            <Link href={href} onClick={onClick} className="inline-block">
+              <MenuText>{label}</MenuText>
+            </Link>
+          )}
+        </div>
+      ))}
+    </>
+  );
+}
+
+function MenuText({ children }: { children: React.ReactNode }) {
+  return (
+    <h2 className="inline-block duration-300 hover:scale-125">{children}</h2>
   );
 }
