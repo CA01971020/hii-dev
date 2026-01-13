@@ -142,7 +142,7 @@ export default function Home() {
             <h2 className=" border-b border-stone-200 pb-1">PORTFOLIO</h2>
             <div className="mt-4">
               <p>
-                13 Projects <br />2 active / 11 completed or paused
+                15 Projects <br />2 active / 13 completed or paused
               </p>
               <div className=" mt-6 flex justify-center">
                 <NextLink href="/portfolio">
