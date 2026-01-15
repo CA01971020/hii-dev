@@ -63,7 +63,7 @@ export default function Home() {
             <h2 className=" border-b border-stone-200 pb-1 ">PROFILE</h2>
             <div className="mt-4">
               <p>hii / Haruto Higashimoto.</p>
-              <p>Web Engineer. </p>
+              <p>Web Developer. </p>
               <p>Ehime / Japan. | Next Tokyo.</p>
               <p>Kawahara Computer Business College. </p>
               <p>Sanno University.</p>
