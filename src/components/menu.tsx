@@ -13,6 +13,7 @@ type MenuItem = {
 
 const INTERNAL_LINKS: MenuItem[] = [
   { href: "/", label: "Home" },
+  { href: "/background", label: "About" },
   { href: "/blog", label: "Blog" },
   { href: "/portfolio", label: "Portfolio" },
 ];

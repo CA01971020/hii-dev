@@ -68,6 +68,11 @@ export default function Home() {
               <p>Kawahara Computer Business College. </p>
               <p>Sanno University.</p>
             </div>
+            <div className=" mt-6 flex justify-center">
+              <NextLink href="/background">
+                <CustomButton buttontext="About me" />
+              </NextLink>
+            </div>
           </div>
 
           <div className="duration-200 hover:scale-103 relative bg-white pt-4 pb-5 pr-4 pl-4 ml-4 mr-4 ">
@@ -133,7 +138,7 @@ export default function Home() {
             </div>
             <div className=" mt-6 flex justify-center">
               <NextLink href="/blog">
-                <CustomButton buttontext="ブログ一覧" />
+                <CustomButton buttontext="Articles" />
               </NextLink>
             </div>
           </div>
@@ -146,7 +151,7 @@ export default function Home() {
               </p>
               <div className=" mt-6 flex justify-center">
                 <NextLink href="/portfolio">
-                  <CustomButton buttontext="プロジェクト一覧" />
+                  <CustomButton buttontext="Projects" />
                 </NextLink>
               </div>
             </div>
