@@ -7,7 +7,7 @@ export default function Portfolios() {
     <div className=" relative top-32 animate-fade-in">
       <h1 className="relative text-center">Portfolios</h1>
 
-      <div className="mt-16 grid gap-y-20 lg:grid-cols-2 lg:gap-y-10 lg:gap-x-5 xl:grid-cols-3">
+      <div className="mt-16 mr-4 ml-4 grid gap-y-20 lg:grid-cols-2 lg:gap-y-10 lg:gap-x-5 xl:grid-cols-3">
         {portfoliosdata.map((portfolio) => (
           <PortfolioCard
             key={portfolio.id}

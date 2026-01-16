@@ -1,4 +1,15 @@
-export const blogdata = [
+export type BlogPlatform = "Zenn" | "note";
+
+export type BlogData = {
+  id: string;
+  title: string;
+  date: string;
+  description: string;
+  url: string;
+  platform: BlogPlatform;
+};
+
+export const blogdata: BlogData[] = [
   {
     id: "b-0018",
     title:

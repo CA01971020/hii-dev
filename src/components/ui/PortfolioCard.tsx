@@ -26,71 +26,102 @@ export const PortfolioCard: React.FC<PortfolioCardProps> = ({
   const statusKey: "ongoing" | "completed" | "paused" = status || "paused";
 
   const statusInfo = {
-    ongoing: { label: "開発中", color: "bg-amber-600 text-white" },
-    completed: { label: "公開中", color: "bg-green-600 text-white" },
-    paused: { label: "開発終了", color: "bg-stone-600 text-white" },
+    ongoing: {
+      label: "開発中",
+      badge: "bg-amber-50 text-amber-700 border border-amber-200",
+    },
+    completed: {
+      label: "公開中",
+      badge: "bg-emerald-50 text-emerald-700 border border-emerald-200",
+    },
+    paused: {
+      label: "開発終了",
+      badge: "bg-stone-100 text-stone-600 border border-stone-300",
+    },
   }[statusKey];
 
   return (
-    <div className="duration-200 hover:scale-103 relative bg-stone-100 pt-6 pb-4 pr-4 pl-4 ml-4 mr-4 border-1 border-gray rounded">
+    <article
+      className="
+        group relative block h-full
+        rounded-2xl border border-stone-200
+        bg-white p-4
+        transition-all duration-300
+        hover:-translate-y-1 hover:shadow-lg
+      "
+    >
+      {/* image */}
       {imageUrl ? (
-        <Image
-          src={imageUrl}
-          alt={title}
-          width={600}
-          height={240}
-          quality={100}
-          className="rounded-md w-full object-cover"
-        />
-      ) : (
-        <div className="bg-gray-300 w-full h-full rounded-md" />
-      )}
-
-      {/* タイトル */}
-      <h2 className="mt-4 text-lg font-semibold">{title}</h2>
-
-      {/* 概要・ステータス */}
-      {period && (
-        <div className="mt-2 flex items-center flex-wrap">
-          <p className="text-sm text-gray-500">開発期間：{period}</p>
-          <span
-            className={`ml-2 mt-1 mb-1 text-xs pt-1 pb-1 pr-2 pl-2 rounded-xl ${statusInfo.color}`}
-          >
-            {statusInfo.label}
-          </span>
+        <div className="overflow-hidden rounded-xl">
+          <Image
+            src={imageUrl}
+            alt={title}
+            width={600}
+            height={240}
+            quality={90}
+            className="
+              h-40 w-full object-cover
+              transition-transform duration-300
+              group-hover:scale-105
+            "
+          />
         </div>
+      ) : (
+        <div className="h-40 w-full rounded-xl bg-stone-200" />
       )}
 
-      {/* URL */}
-      {url && (
-        <a
-          href={url}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-sky-500 font-bold mt-2 block hover:underline break-all"
+      {/* header */}
+      <div className="mt-4 flex items-start justify-between gap-2">
+        <h2 className="text-lg font-semibold text-stone-800">{title}</h2>
+
+        <span
+          className={`shrink-0 rounded-full px-2 py-0.5 text-xs font-medium ${statusInfo.badge}`}
         >
-          {url}
-        </a>
+          {statusInfo.label}
+        </span>
+      </div>
+
+      {/* period */}
+      {period && (
+        <p className="mt-1 text-xs text-stone-400">開発期間：{period}</p>
       )}
 
-      {/* 説明 */}
-      <p className="mt-2 text-gray-700 text-sm leading-relaxed">
+      {/* description */}
+      <p className="mt-3 text-sm leading-relaxed text-stone-600 line-clamp-3">
         {description}
       </p>
 
-      {/* 技術タグ */}
+      {/* tech stack */}
       {techStackTag && techStackTag.length > 0 && (
         <div className="mt-4 flex flex-wrap gap-2">
           {techStackTag.map((tag, index) => (
             <span
               key={index}
-              className="bg-stone-300 text-sm text-gray-800 px-2 py-1 rounded-xl"
+              className="
+                rounded-full border border-stone-300
+                bg-stone-100 px-2 py-0.5
+                text-xs text-stone-600
+              "
             >
               {tag}
             </span>
           ))}
         </div>
       )}
-    </div>
+
+      {/* link underline */}
+      {url && (
+        <a
+          href={url}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="
+            absolute inset-0 rounded-2xl
+            focus:outline-none
+          "
+          aria-label={`${title} を開く`}
+        />
+      )}
+    </article>
   );
 };
