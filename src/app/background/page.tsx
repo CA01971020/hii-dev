@@ -68,7 +68,6 @@ export default function Portfolios() {
 
         <span className="w-3 h-3 rounded-full bg-stone-400 z-10" />
 
-        {/* 専門学校 */}
         <div className="relative w-full max-w-xl rounded-2xl border border-stone-200 bg-white/60 p-6 shadow-sm text-left transition-shadow hover:shadow-md">
           <div className="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:justify-between">
             <h2 className="text-lg font-semibold tracking-tight">
@@ -78,7 +77,7 @@ export default function Portfolios() {
           </div>
 
           <p className="mt-4 text-sm leading-relaxed text-stone-600">
-            清掃スタッフとして採用後、レジ業務・ホール業務・調理補助を経験しました。また、100人規模の宴会においてランナーリーダーを担当しました。さらに、清掃スタッフのリーダーとして業務連絡を担い、有志スタッフと協力して清掃スタッフ用のマニュアルを作成しました。
+            清掃スタッフとして採用後、レジ業務・ホール業務・調理補助を経験しました。また、100人規模の宴会においてランナーリーダーを担当しました。その他にも、清掃スタッフのリーダーとして業務連絡を担い、有志スタッフと協力して清掃スタッフ用のマニュアルを作成しました。
           </p>
         </div>
 
@@ -119,6 +118,19 @@ export default function Portfolios() {
           </div>
         </div>
 
+        <span className="w-3 h-3 rounded-full bg-stone-400 z-10" />
+
+        <div className="relative w-full max-w-xl rounded-2xl border border-stone-200 bg-white/60 p-6 shadow-sm text-left transition-shadow hover:shadow-md">
+          <div className="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:justify-between">
+            <h2 className="text-lg font-semibold tracking-tight">
+              学生エンジニアコミュニティ参加
+            </h2>
+            <span className="text-xs text-stone-400">2024 – 現在</span>
+          </div>
+          <p className="mt-4 text-sm leading-relaxed text-stone-600">
+            学生エンジニアコミュニティでは、日々の学習内容の発表や勉強会の開催をはじめ、就職活動やインターンに関する情報共有など、学生同士が成長できるさまざまな活動を行っています。
+          </p>
+        </div>
         <span className="w-3 h-3 rounded-full bg-stone-400 z-10" />
       </div>
 
