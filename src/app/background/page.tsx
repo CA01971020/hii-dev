@@ -73,7 +73,7 @@ export default function Portfolios() {
             <h2 className="text-lg font-semibold tracking-tight">
               飲食アルバイト
             </h2>
-            <span className="text-xs text-stone-400">2022 – 現在</span>
+            <span className="text-xs text-stone-400">2022 – 2026.02</span>
           </div>
 
           <p className="mt-4 text-sm leading-relaxed text-stone-600">
@@ -90,7 +90,7 @@ export default function Portfolios() {
               河原電子ビジネス専門学校 <br />
               ITイノベーション科
             </h2>
-            <span className="text-xs text-stone-400">2022 – 現在</span>
+            <span className="text-xs text-stone-400">2022 – 2026.03</span>
           </div>
 
           <p className="mt-4 text-sm leading-relaxed text-stone-600">
